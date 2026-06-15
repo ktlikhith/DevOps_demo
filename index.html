@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Demo App</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #38bdf8;
+      border: 1px solid #38bdf8;
+      padding: 4px 14px;
+      border-radius: 999px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    h1 span {
+      color: #38bdf8;
+    }
+
+    p.sub {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      text-align: center;
+      margin-bottom: 48px;
+      max-width: 480px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #1e2330;
+      border: 1px solid #2d3748;
+      border-radius: 12px;
+      padding: 24px 28px;
+      width: 180px;
+      text-align: center;
+    }
+
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .card .label {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .card .value {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #38bdf8;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #4a5568;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="badge">🐳 Running inside Docker + Nginx</div>
+
+  <h1>Hello from <span>DevOps</span> Demo</h1>
+  <p class="sub">A simple static app served by Nginx inside a Docker container.</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="icon">🐳</div>
+      <div class="label">Server</div>
+      <div class="value">Docker</div>
+    </div>
+    <div class="card">
+      <div class="icon">⚡</div>
+      <div class="label">Web Server</div>
+      <div class="value">Nginx</div>
+    </div>
+    <div class="card">
+      <div class="icon">🌐</div>
+      <div class="label">Port</div>
+      <div class="value">80</div>
+    </div>
+    <div class="card">
+      <div class="icon">✅</div>
+      <div class="label">Status</div>
+      <div class="value">Live</div>
+    </div>
+  </div>
+
+  <footer>DevOps Demo · Nginx · Docker</footer>
+
+</body>
+</html>
