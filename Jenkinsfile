@@ -12,7 +12,7 @@ pipeline {
                 checkout scm
             }
         }
-        stage('')
+        
 
         stage('Stop Existing Container') {
             steps {
