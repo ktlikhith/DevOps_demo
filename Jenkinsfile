@@ -12,11 +12,13 @@ pipeline {
                 checkout scm
             }
         }
+        stage('')
 
         stage('Stop Existing Container') {
             steps {
                 // '|| true' prevents pipeline failure if nothing is running yet
                 sh 'docker compose down || true'
+                sh 'docker rm -f devops-demo || true
             }
         }
 
